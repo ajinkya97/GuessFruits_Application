@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Fragmentone">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/apple"
+        android:id="@+id/appleimg" />
+
+    <Button
+        android:id="@+id/mango1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:text="mango"
+        android:onClick="imageclick"
+        android:layout_below="@+id/appleimg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/banana1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:text="banana"
+        android:onClick="imageclick"
+        android:layout_below="@+id/appleimg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/apple1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apple"
+        android:onClick="imageclick"
+        android:layout_alignBaseline="@+id/orange1"
+        android:layout_alignBottom="@+id/orange1"
+        android:layout_alignLeft="@+id/mango1"
+        android:layout_alignStart="@+id/mango1" />
+
+    <Button
+        android:id="@+id/orange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orange"
+        android:onClick="imageclick"
+        android:layout_below="@+id/banana1"
+        android:layout_alignLeft="@+id/banana1"
+        android:layout_alignStart="@+id/banana1"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="next"
+        android:onClick="nextbtn"
+        />
+
+
+</RelativeLayout>

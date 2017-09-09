@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Fragmentfour">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="330dp"
+        android:background="@drawable/orange"
+        android:id="@+id/orangeimg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/apple4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/orangeimg"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="apple"
+        android:onClick="imageclick"
+        />
+
+    <Button
+        android:id="@+id/mango4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/apple4"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="mango"
+        android:onClick="imageclick"
+        />
+
+    <Button
+        android:id="@+id/orange4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/apple4"
+        android:layout_alignRight="@+id/apple4"
+        android:layout_below="@+id/apple4"
+        android:layout_marginTop="26dp"
+        android:text="orange"
+        android:onClick="imageclick"
+        />
+
+    <Button
+        android:id="@+id/banana4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mango4"
+        android:layout_alignStart="@+id/mango4"
+        android:layout_alignTop="@+id/orange4"
+        android:text="banana"
+        android:onClick="imageclick"
+        />
+
+    <Button
+        android:id="@+id/back4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="back"
+        android:onClick="backbtn"
+        />
+
+</RelativeLayout>

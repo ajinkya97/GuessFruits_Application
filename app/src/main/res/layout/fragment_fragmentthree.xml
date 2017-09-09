@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Fragmentthree">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <ImageView
+        android:id="@+id/mangoimg"
+        android:layout_width="400dp"
+        android:layout_height="330dp"
+        android:background="@drawable/mango"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/orange3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orange"
+        android:onClick="imageclick"
+        android:layout_below="@+id/mangoimg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp" />
+
+    <Button
+        android:id="@+id/apple3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apple"
+        android:onClick="imageclick"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/mangoimg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/banana3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="banana"
+        android:onClick="imageclick"
+        android:layout_above="@+id/back3"
+        android:layout_alignLeft="@+id/apple3"
+        android:layout_alignStart="@+id/apple3"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/mango3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mango"
+        android:onClick="imageclick"
+        android:layout_alignBaseline="@+id/banana3"
+        android:layout_alignBottom="@+id/banana3"
+        android:layout_alignLeft="@+id/orange3"
+        android:layout_alignStart="@+id/orange3" />
+
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="backbtn"
+        android:text="back" />
+
+    <Button
+        android:id="@+id/next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="next"
+        android:onClick="nextbtn"
+        />
+
+</RelativeLayout>
